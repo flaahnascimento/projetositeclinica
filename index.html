@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJETOIWB 💻</title>
-   
     <meta name="description" content="" >
     <meta name="keywords" content="" >
 
@@ -30,11 +29,9 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="d-none d-md-flex align-items-center">
             <i class="bi bi-clock me-1"></i> Segunda a Sábado, das 8h às 16h <!-- mudar -->
- 
           </div>
           <div class="d-flex align-items-center">
             <i class="bi bi-phone me-1"></i> Ligue agora: +55 11 98765 - 4321 <!-- mudar -->
- 
           </div>
         </div>
     </div><!-- End Top Bar -->
@@ -46,29 +43,36 @@
                     <img src="img/logo.png" alt="logo"><!-- depois arrumaaaaaaaaaaaaaaaaaaaaaa-->
                   
                 </a>
-                 <!-- menu-->
-            <nav>
+                 <!-- menu que as pag rola para baixo-->
+            <nav id="navmenu" class="navmenu">
                   <ul>
-                      <li><a href="">  Home </a></li>
-                      <li><a href="">  Serviços </a></li>
-                      <li><a href="">  Sobre </a></li>
-                      <li><a href="">  Contato </a></li>
-                      <li><a href="">  Mais opçoes </a></a>
+                      <li> <a href="#hero" class="active">Home</a> </li>
+                      <li> <a href="serviços">Serviços</a> </li>
+                      <li> <a href="#sobre">Sobre</a> </li>
+                      <li> <a href="#contato">Contato</a> </li>
+                      <li class="dropdown">
+                      <a href="#">
+                        <span>mais opçoes</span>
+                        <i class="bi bi-chevron-down"></i>
 
+                      </a>
+                     
+                    <ul>
                         <!-- submenu-->
-                <ul>
-                    <li> Opçao 1 </li>
-                    <li> Opçao 2 </li>
-                      <li> Submenu
-                        <ul>
-                          <li>Submenu 1</li>
-                          <li>Submenu 2</li>
-                        </ul>
-                    </li><!-- fim submenu--> 
-                  </li>
-                
-                
-                </ul><!-- fim mais opcoes--> 
+                        <li><a href="#">Opçao 1</a> </li>
+                        <li><a href="#">Opçao 2 </a> </li>
+                        <li class="dropdown"> 
+                            <a href="#"></a>
+                              <span>Submenu</span></a>
+                              <i class="bi bi-chevron-down"></i>
+                            </a>
+                    </ul>
+                                  <li><a href="#">Submenu 1</a></li>
+                                  <li><a href="#">Submenu 2 </a></li>
+                               </ul>
+                            </li>
+                        </li><!-- fim submenu--> 
+                      </ul><!-- fim mais opcoes--> 
 
                 <!--icone menu hamburguer, o bi bi list e do bootstrap icons.
                 none remove o icone menu para telas grandes, monitor - responsividade--> 
