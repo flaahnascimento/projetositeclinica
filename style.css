@@ -1,10 +1,46 @@
-:root {
+:root { /*padronizaçao: criei variavel para fundo, criei uma varievel para a cor de menu, e cor de texto*/
+   --background-color: rgba(139, 123, 123, 0.363); /*cor de fundo do site*/
+   --nav-fundo: rgb(230, 200, 200);  /*cor de fundo*/
+    --texto-default: rgb(46, 45, 45) ; /*cor para texto*/
+    --titulo-color: rgb(0, 0, 0); /*cor para titulos, paragrafos*/
+    --titulo-color2: rgb(204, 31, 31);
+    --nav-color: white;
+    --nav-houver-color: rgb(131, 196, 216); /*cor, passar mouse por cima*/ 
+    --nav-mobile-background: white ;
+    --nav-dropdown-background: rgb(189, 192, 206);
+    --nav-dropdown-color: white;
+    ---------------nav-dropdown-hover-color: rgb(134, 226, 226);
+    --nav-bg-topbar: rgb(167, 167, 226); /*bg e abreviei background*/
+    --nav-color: rgb(224, 209, 209);
+    /*color:texto; background: fundo*/
+}
+body { /*chamei a variavel*/
+    background:var( --background-color);/*cor de fundo do site*/
+    color:var(--texto-default)/*cor para texto*/
+}
 
+/*seletor*/a {
+    text-decoration: none;
+    transition: 0,3s; /*tempo da transiçao*/
+}
+nav { /*chamei a variavel*/
+    background:var(--nav-fundo);
+}
 
+/*HEADER*/
+/*classe segue . - e aid #*/
+.header{
+    color: var(--texto-default);
+    background: var(--background-color);
+    box-shadow: (voltar aqui);
+}
+/*chamei a principal e chamei a classe*/
+.header .topbar {
+    background: var(--nav-bg-topbar);
+    color: var(--nav-color);
+    height: 40px;
+}
+.branding{
 
 
 }
-
-
-
-
