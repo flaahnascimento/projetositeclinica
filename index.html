@@ -1,123 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PROJETOIWB 💻</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPTM</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-  <!-- favicons -->
-  <link rel="icon" href="">
+    <!-- Favicons -->
+    <link rel="icon" href="">
 
-  <!--  css bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Fonts -->
 
-  <link rel="stylesheet" href="css/style.css"> <!-- linkei html com css -->
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
-
 <body>
-  <!--cabecalho,div para o conteudo do menu home -->
-  <header id="header" class="header">
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="d-none d-md-flex align-items-center">
-          <i class="bi bi-clock me-1"></i> Segunda a Sábado, das 8h às 16h <!-- mudar -->
-        </div>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-phone me-1"></i> Ligue agora: +55 11 98765 - 4321 <!-- mudar -->
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-center">
-      <div class="container posicion-relative d-flex align-items-center justify-content-end">
+    <header id="header" class="header"> 
+        <div class="topbar d-flex align-items-center">
+            
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="d-none d-md-flex align-items-center">
+                  
+                    <i class="bi bi-clock"></i>
+                    Segunda a Sexta, das 8h as 17h
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="img/logo.png" alt="logo"><!-- depois arrumaaaaaaaaaaaaaaaaaaaaaa-->
+                </div>
 
-        </a>
-        <!-- menu que as pag rola para baixo-->
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li> <a href="#hero" class="active">Home</a> </li>
-            <li> <a href="serviços">Serviços</a> </li>
-            <li> <a href="#sobre">Sobre</a> </li>
-            <li> <a href="#contato">Contato</a> </li>
-            <li class="dropdown">
-              <a href="#">
-                <span>mais opçoes</span>
-                <i class="bi bi-chevron-down"></i>
+                <div class="d-flex align-items-center">
+                  
+                    <i class="bi bi-phone"></i>
+                    Ligue agora: (11) 98765 - 4321
 
-              </a>
-              <ul>
-                <!-- submenu-->
-                <li><a href="#">Opçao 1</a> </li>
-                <li><a href="#">Opçao 2 </a> </li>
-                <li class="dropdown">
-                  <a href="#">
-                    <span>Submenu</span>
-                    <i class="bi bi-chevron-down"></i>
-                  </a>
-                  <ul>
-                    <li> <a href="#">Submenu 1</a></li>
-                    <li> <a href="#">Submenu 2 </a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li><!-- fim submenu-->
-          </ul><!-- fim mais opcoes-->
-<!--icone menu hamburguer-->
-<i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
+                </div>
+            </div> <!-- fim container -->
+        </div> <!--fim topbar-->
 
-</nav> 
+        <div class="branding d-flex align-items-center">
+            <div class="container position-relative d-flex align-items-center justify-content-end">
 
-<a href="" class="cta-btn">
-    Agende uma consulta
-</a>
+                <a href="" class="logo d-flex align-items-center me-auto">
+                    <img src="img/logo.png" alt="">
+                </a>
 
-</div> <!--fim container-->
-</div> <!--fim branding-->
+                <!-- Menu -->
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li> <a href="#hero" class="active"> Home </a>  </li>
+                        <li> <a href="#servicos"> Serviços </a>  </li>
+                        <li> <a href="#sobre"> Sobre </a>  </li>
+                        <li class="dropdown"> 
+                            <a href="#"> 
+                                <span> Mais Opções </span> 
+                                <i class="bi-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li> <a href="#"> Opção 1 </a> </li>
+                                <li> <a href="#"> Opção 2 </a> </li>
+                                <li class="dropdown"> 
+                                    <a href="#"> 
+                                        <span> Submenu </span>
+                                        <i class="bi bi-chevron-down"></i> 
+                                    </a> 
+                                    <ul>
+                                        <li> <a href="#"> Submenu 1 </a> </li>
+                                        <li> <a href="#"> Submenu 2 </a> </li>
+                                    </ul>
+                                </li> <!--fim Submenu-->
+                            </ul>                   
+                        </li> <!--fim Mais opções-->
+                    </ul>
+
+                    <!--icone menu hamburguer-->
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
+
+                </nav> 
+
+                <a href="" class="cta-btn">
+                    Agende uma consulta
+                </a>
+
+            </div> <!--fim container-->
+        </div> <!--fim branding-->
 
 
-</header> <!-- fim header -->
+    </header> <!-- fim header -->
 
-<main class="main">
+    <main class="main">
+        
+        <!-- HERO section -->
+        <section id="hero" class="hero section">
 
-<!-- HERO section -->
-<section id="hero" class="hero section">
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-<div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <!-- foto 1 / slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/hero-carousel-1.jpg" alt="">
 
-<!-- foto 1 / slide 1 -->
-<div class="carousel-item active">
-    <img src="img/hero-carousel-1.jpg" alt="">
+                    <div class="container">
+                        <h2> Bem vindo à "Sua marca"</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Sunt consequuntur dolore recusandae optio natus corrupti non repellendus beatae mollitia suscipit inventore error sint, autem eius iste explicabo nulla! Harum, veniam!
+                        </p>
+                    </div>
 
-    <div class="container">
-        <h2> Bem vindo à "Sua marca"</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Sunt consequuntur dolore recusandae optio natus corrupti non repellendus beatae mollitia suscipit inventore error sint, autem eius iste explicabo nulla! Harum, veniam!
-        </p>
-    </div>
+                </div> <!-- fim slide 1 -->
 
-</div> <!-- fim slide 1 -->
+                <!-- foto 1 / slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/hero-carousel-2.jpg" alt="">
 
-</div> <!-- fim do carrousel -->
+                    <div class="container">
+                        <h2> Bem vindo à "Sua marca"</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Sunt consequuntur dolore recusandae optio natus corrupti non repellendus beatae mollitia suscipit inventore error sint, autem eius iste explicabo nulla! Harum, veniam!
+                        </p>
+                    </div>
 
-</section>
+                </div> <!-- fim slide 2 -->
 
-</main>
+                <!-- foto 1 / slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/hero-carousel-3.jpg" alt="">
 
-<!-- Main JS -->
-<script src="js/main.js"> </script>
+                    <div class="container">
+                        <h2> Bem vindo à "Sua marca"</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Sunt consequuntur dolore recusandae optio natus corrupti non repellendus beatae mollitia suscipit inventore error sint, autem eius iste explicabo nulla! Harum, veniam!
+                        </p>
+                    </div>
+
+                </div> <!-- fim slide 3 -->
+
+                
+
+            </div> <!-- fim do carrousel -->
+
+
+            <!--  control prev, # para carregar para a mesma pag, pode por botao-->
+            <a href="#hero-carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+              <i class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></i>
+
+            </a>
+
+
+            <!-- control next *role para chamar funçao da biblioteca java script, bs e bootstrap*-->
+            <a href="hero-carousel" class="carousel-control-next" role="button" data-bs-slide="next">
+            <i class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></i>
+            </a>
+
+               <!-- por as bolinhas dos slides -->
+            <ol class="carousel-indicators">
+
+            </ol>
+        </section>
+     
+
+    </main>
+
+    <!-- Main JS -->
+    <script src="js/main.js"> </script>
 
 </body>
 </html>
