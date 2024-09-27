@@ -335,3 +335,64 @@ a {
  /*  color: ; */
 
 }
+
+.hero .carousel-control-prev {
+  justify-content: start;
+
+
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+
+
+}
+/* separa por virgula quando quer pegar duas divs para dar a mesma caracteristica */
+.hero .carousel-control-next-icon, .hero .carousel-control-prev-icon  {
+
+  background: #3fbbc0;
+  font-size: 26px;
+  color: red;
+  border-radius: 50px;
+  transition: 0,3s;
+  width: 54px;
+  height: 54px;
+  display: flex; /* deixa no local certo */
+  justify-content: center; /* centraliza horizontal */
+  align-items: center; /* centraliza vertical */
+  
+
+}
+
+.hero .carousel-indicators {
+  cursor: pointer;
+  background: #444;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50px;
+  transition: 0,3s;
+  height: 12px;
+  opacity: 1;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50px;
+  transition: 0,3s;
+}
+
+.hero .carousel-indicators.active {
+  opacity: 1;
+  background: red;
+
+}
+
+.header .cta-btn, .header .cta-btn:focus {
+  color: #363636;
+  background: #3fbbc0;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin: 0 5px 0 30px;
+  border-radius: 4px;
+}
