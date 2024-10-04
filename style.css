@@ -393,7 +393,7 @@ a {
 /* featured services section */
 
 
-.featured-serviçes .service-item { /* não esta funcionando */
+.featured-services .service-item { /* não esta funcionando */
   background: #fff;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
@@ -403,11 +403,11 @@ a {
   z-index: 1;
 }
 
-.featured-serviçes .service-item .icon {
+.featured-services .service-item .icon {
   margin-bottom: 10px;
 }
 
-.featured-serviçes .service-item .icon i {
+.featured-services .service-item .icon i {
   color: #3fbbc0;
   font-size: 36px;
   transition: ease-in-out 0.3s;
