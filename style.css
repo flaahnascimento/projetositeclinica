@@ -412,25 +412,152 @@ a {
   font-size: 36px;
   transition: ease-in-out 0.3s;
 }
+/* fonte do h4 */
+.featured-services .service-item .icon h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+/* cor titulo */
+.featured-services .service-item h4 a {
+  color: red;
+}
+/* titulo */
+.featured-services .service-item .p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* aparece cor ao posicionar o mouse na caixa */
+.featured-services .service-item h4 a, 
+.featured-services .service-item:hover .icon i,
+.featured-services .service-item:hover p {
+  color: whitesmoke;
+}
+
+.featured-services .service-item:hover:before {
+  background: #65bfc2;
+  inset: 0;
+  border-radius: 0px;
+}
+
+.featured-services .service-item:before { /* depois do cursor do mouse */
+  content: "";
+  position: absolute; /* coloca o quadrado em cima da area  */
+  background: #329699;
+  inset: 100% 0 0 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+/* cada quadrado e um servece item */
 
 
+.accent-background {
+  background: #3fbbc0;
+  color: #e0e0e0;
+}
+
+/* global section */
+
+section, .section {
+  color: red;
+  background: #e0e0e0;
+  padding: 60px 0;
+}
+
+@media (max-widht: 100px) {
+  section, .section {
+    scroll-margin-top: 10px;
+  }
+}
 
 
+/* global section titulos */
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
 
 
+.section-title  h2{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20 px;
+  padding-bottom: 20 px;
+  position: relative;
+
+}
+
+.section-title h2:after { /* depois do titulo */
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
 
 
+}
 
 
+/*about*/
+.about .content h3 {
+  font-size: 1.75rem; 
+  /* multiplicar 16 ou dividir 16*/
+  font-weight: 700;
+  color: #336668;
+}
 
 
+.about .content ul {
+  list-style: mone;
+  padding: 0;
+  display: flex;
 
 
+}
 
 
+.about .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+
+.about .content ul i {
+    color: #00b0c4;
+    margin-right: 0.5rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
+  }
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  }
+
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix (in srgb, var(--accent-color), transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
 
 
-
+}
 
 .header .cta-btn, .header .cta-btn:focus {
   color: #363636;
@@ -439,5 +566,11 @@ a {
   padding: 8px 20px;
   margin: 0 5px 0 30px;
   border-radius: 4px;
-
 }
+
+
+
+
+
+
+
