@@ -388,6 +388,50 @@ a {
 
 }
 
+
+
+/* featured services section */
+
+
+.featured-serviçes .service-item { /* não esta funcionando */
+  background: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-serviçes .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.featured-serviçes .service-item .icon i {
+  color: #3fbbc0;
+  font-size: 36px;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header .cta-btn, .header .cta-btn:focus {
   color: #363636;
   background: #3fbbc0;
@@ -395,4 +439,5 @@ a {
   padding: 8px 20px;
   margin: 0 5px 0 30px;
   border-radius: 4px;
+
 }
