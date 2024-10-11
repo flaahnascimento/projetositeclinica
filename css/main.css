@@ -651,5 +651,43 @@ section,
 }
 /* fim status */
 
+/* scroll top nutton */
+
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top:hover {
+  background: #69c9cc;
+}
+
+.scroll-top:hover i{
+  color: #3fbbc0;
+}
+
+
+
+
 
 
