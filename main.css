@@ -883,6 +883,62 @@ section,
   background: #006b77;
 }
 
+.doctors .team-member {
+  background: rgb(248, 247, 247);
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.doctors .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+.doctors .team-member .social a {
+background: whitesmoke;
+color: black;
+margin: 0 3px;
+border-radius: 4px;
+width: 36px;
+right: 36px;
+transition: ease-in-out 0.3s;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.doctors .team-member .social a:hover {
+  color: #fff;
+  background: #01d2e9;
+}
+
+.doctors .team-member .member-info {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.doctors .team-member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+
+
+
+
+
 /* FAQ */
 .faq .faq-container .faq-item {
   background: #ccc;
@@ -962,7 +1018,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    
+
     font-size: 30px;
   }
 }
