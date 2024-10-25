@@ -1,23 +1,22 @@
-/* google fonts */
-:root{
-  --defaut-font:"Playfair Display" ; /* fonte padrao */
-  --heading-font: "Protest Strike", sans-serif; /* titulos */
-  --nav-font: "roboto", sans-serif; /* navegaçoes / menu */
+/* Google Fonts */
+:root {
+  --defaut-font: "Roboto", sans-serif;  /* fonte padrão */
+  --heading-font: "Protest Strike", sans-serif; /* títulos */
+  --nav-font: "Roboto", sans-serif; /* navegações / Menu */
 }
 
 :root{
     --background-color: #ebebeb;
     --nav-fundo: #dbdbdb;
     --texto-default: #444;
-    --heading-color: #363636; /* cor de texto em cabeçalho ou titulos */
+    --heading-color: #363636; /* cor de texto em cabeçalho ou títulos */
     --nav-color: #444;
     --nav-hover-color: #3fbbc0;
     --nav-mobile-background: #ebebeb;
     --nav-dropdown-background: #195052;
     --nav-dropdown-color: #ebebeb;
     --nav-dropdown-hover-color: #3fbbc0;
-    --nav-bg-topbar: #3fbbc0;
-    --nav-color2: #ebebeb;
+    --nav-bg-topbar: #3fbbc0; 
     --surface: #fff;
     --accent-color: #66d4d7;
 }
@@ -355,9 +354,11 @@ a {
   align-items: center;
 }
 
-.hero .carousel-indicators {
+
+
+.hero .carousel-indicators li {
   cursor: pointer;
-  background: #444;
+  background: #ccc;
   width: 12px;
   height: 12px;
   opacity: 1;
@@ -367,7 +368,8 @@ a {
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active {
+
+.hero .carousel-indicators li.active {
   opacity: 1;
   background: red;
 }
@@ -547,26 +549,25 @@ section,
   overflow: hidden;
 }
 
-.pulsating-play-btn:before {
+.pulsating-play-btn::before {
   content: "";
   position: absolute;
   width: 120px;
   height: 120px;
   animation-delay: 0s;
-  animation: pulsate-play-btn 2s;
+  animation: teste 2s;
   animation-direction: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(89, 215, 253);
-  top:  -15%;
+  border: 5px solid rgb(89, 215, 253);
+  top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
-
 }
 
-.pulsating-play-btn:after {
+.pulsating-play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -581,12 +582,12 @@ section,
   transition: all 400ms;
 }
 
-.pulsating-play-btn:hover:before {
+.pulsating-play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-40%) translateX(-50%);
+  transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border: none;
@@ -596,36 +597,31 @@ section,
   z-index: 200;
   animation: none;
   border-radius: 0;
-
 }
 
-.pulsating-play-btn:hover:after {
-  border-left: 15px solid var (--accent-color);
+.pulsating-play-btn:hover::after {
+  border-left: 15px solid var(--accent-color);
   transform: scale(20);
-
 }
 
-@keyframes pulsating-play-btn {
+@keyframes teste {
   0% {
     transform: scale(0.6, 0.6);
     opacity: 1;
-
   }
 
   100% {
     transform: scale(1, 1);
     opacity: 0;
-
   }
-
-  /* inicio status */
 }
+
+/* STATUS */
 
 .stats .stats-item {
   background-color: var(--background-color);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 30px;
-
 }
 
 .stats .stats-item i {
@@ -636,7 +632,7 @@ section,
 }
 
 .stats .stats-item span {
-  color: var(--nav-color);
+  color: var(--heading-color);
   font-size: 36px;
   display: block;
   font-weight: 600;
@@ -645,21 +641,21 @@ section,
 .stats .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--nav-font);
+  font-family: var(--defaut-font);
   font-size: 16px;
-  font-weight: 650;
+  font-weight: 500;
 }
-/* fim status */
+/* fim dos status */
 
-/* scroll top nutton */
 
+/* Scroll Top Button */
 .scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 999999;
+  z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
   height: 40px;
@@ -679,19 +675,20 @@ section,
 }
 
 .scroll-top:hover {
-  background: #69c9cc;
+  background: #b6e7e9;
 }
 
 .scroll-top:hover i{
   color: #3fbbc0;
 }
-/* feature */
-.features .feature-image {
+
+/* Features // Caracteristicas */
+.features .features-image {
   position: relative;
   min-height: 400px;
 }
 
-.features .feature-image img {
+.features .features-image img {
   position: absolute;
   inset: 0;
   display: block;
@@ -701,7 +698,399 @@ section,
   z-index: 1;
 }
 
+.features h3 {
+  font-size: 28px; /* aumentar ou diminuir o tamanho da fonte */
+  font-weight: 700; /* espessura da fonte */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2293a0;
+  /* font-family: ; opcional */
+}
+
+.features h3:after {
+  content: "";
+  background: #00b0c4;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+
+.features .icon-box {
+  margin-top: 50px;
+}
+
+.features .icon-box i {
+  color: #00cdcd;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  line-height: 0;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.features .icon-box:hover i {
+  background-color: #00cdcd;
+  color: whitesmoke;
+}
+
+.features .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.features .icon-box h4 a {
+  color: #13b6bc;
+  transition: 0.3s;
+}
+
+.features .icon-box h4 a:hover {
+  color: #0d8084;
+}
+
+.features .icon-box p {
+  line-height: 10px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Services Section */
+.services .service-item {
+  text-align: center;
+  padding: 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item .icon {
+  background: whitesmoke;
+  color: #3fbbc0;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-size: 22px;
+  transition: 0.3s;
+  position: relative;
+  color: #272727;
+  /* font-family: ; */
+}
+
+.services .service-item h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #00cdcd;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover .icon{
+  box-shadow: 0px 0 40px rgba(11, 234, 234, 0.8);
+}
+
+.services .service-item:hover h3 {
+  color: #2293a0;
+}
+
+/* Consulta // Forms */
+.consulta .email-form {
+  width: 100%;
+}
+
+.consulta .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.consulta .email-form input,
+.consulta .email-form textarea,
+.consulta .email-form select {
+  color: #01b7cb;
+  background: whitesmoke;
+  border-color: color-mix(in srgb, #00b0c4, transparent 80%);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+
+}
+
+.consulta .email-form input::placeholder,
+.consulta .email-form textarea::placeholder,
+.consulta .email-form select::placeholder {
+  color: color-mix(in srgb, #0c7a7d, transparent 50%);
+}
+
+/* Quando o Input for selecionado */
+.consulta .email-form input:focus,
+.consulta .email-form textarea:focus,
+.consulta .email-form select:focus {
+  border-color: #00cdcd;
+}
+
+.consulta .email-form input,
+.consulta .email-form select {
+  height: 44px;
+}
+
+.consulta .email-form textarea {
+  padding: 10px 12px;
+}
+
+.consulta .email-form button {
+  background: #00a2b4;
+  color: whitesmoke;
+  border: 0;
+  padding: 10px 35px;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+
+.consulta .email-form button:hover {
+  background: #006b77;
+}
+
+.doctors .team-member {
+  background: rgb(248, 247, 247);
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.doctors .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+.doctors .team-member .social a {
+background: whitesmoke;
+color: black;
+margin: 0 3px;
+border-radius: 4px;
+width: 36px;
+right: 36px;
+transition: ease-in-out 0.3s;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.doctors .team-member .social a:hover {
+  color: #fff;
+  background: #01d2e9;
+}
+
+.doctors .team-member .member-info {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.doctors .team-member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.doctors .team-member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.doctors .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.doctors .team-member .member-info span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  /* color: opcional */
+}
 
 
 
 
+
+
+
+
+
+
+/* FAQ */
+.faq .faq-container .faq-item {
+  background: #ccc;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: "";
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: #00b0c4;
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #38d4d4;
+}
+
+/* contato */
+.contato .info-item {
+  background: #fff;
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.3);
+  padding: 24px 0 30px 0;
+
+}
+
+.contato .info-item i {
+  color: #0d8084;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px dotted #0d8084;
+}
+
+.contato .info-item h3 {
+  font-size: 20px;
+  color: #383838;
+  font-weight: 700;
+  margin: 10px 0;
+
+}
+
+.contato .info-item p {
+  padding: 0;
+  color: #383838;
+  font-weight: 700;
+  margin: 10px 0;
+
+}
+
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: red;
+}
+
+
+.faq .faq-container .faq-active {
+  border-color: black;
+}
+
+.faq .faq-container .faq-active .faq-content {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: #01d2e9;
+}
+/* responsivos */
+
+@media (max-height: 500px), 
+(max-width:580px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
+}
